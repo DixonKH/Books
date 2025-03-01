@@ -1,5 +1,5 @@
 
-class MemberService {
+class MemberService { 
     constructor() {
 
     }

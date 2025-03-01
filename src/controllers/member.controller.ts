@@ -5,6 +5,7 @@ import MemberService from "../models/Member.service";
 const memberController: T = {};
 memberController.goHome = (req: Request, res: Response) => {
     try {
+        console.log('You are on the homepage');
         res.send('You are on the homepage');
     } catch (error) {
         console.log("Error homepage: ", error);
@@ -13,6 +14,7 @@ memberController.goHome = (req: Request, res: Response) => {
 
 memberController.getLogin = (req: Request, res: Response) => {
     try {
+        console.log('You are on the login page');
         res.send('You are on the login page');
     } catch (error) {
         console.log("Error Login: ", error);
@@ -21,6 +23,7 @@ memberController.getLogin = (req: Request, res: Response) => {
 
 memberController.getSignup = (req: Request, res: Response) => {
     try {
+        console.log('You are on the signup page');
         res.send('You are on the signup page');
     } catch (error) {
         console.log("Error signup: ", error);

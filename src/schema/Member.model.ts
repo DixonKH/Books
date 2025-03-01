@@ -1,7 +1,7 @@
 import mongoose, {Schema} from "mongoose";
 
 const memberSchema = new Schema({
-    memberNick: {
+    memberNick: { 
         type: String,
         index: { unique: true, sparse: true },
         required: true
@@ -14,7 +14,7 @@ const memberSchema = new Schema({
         type: String
     }
 },
-{
+{       
     timestamps: true
 });
 
